@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidding App with Local Storage</title>
+    <script src="prob2.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html">Home</a>
+
+    <br>
+
+    <h1>Problem 2</h1>
+    <h2>Bidding App with Local Storage</h2>
+    <input type="number" id="bidInput1">
+    <button id="placeBid1" onclick="addBid('bidInput1')">Place Bid</button>
+    <br>
+    <input type="number" id="bidInput2">
+    <button id="placeBid2" onclick="addBid('bidInput2')">Place Bid</button>
+    <br><br>
+    <button id="displayBids" onclick="showBids()">Display Bids</button>
+    <button id="clearBids" onclick="deleteBids()">Clear Bids</button>
+    <button id="storeBids">Store Bids</button>
+    <button id="retrieveBids">Retrieve Bids</button>
+    <br>
+    <h3>Bids:</h3>
+    <div id="bidOutput"></div>
+</body>
+</html>
