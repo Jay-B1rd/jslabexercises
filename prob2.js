@@ -12,6 +12,7 @@ function showBids() {
 
 function deleteBids() {
     bidArray = [];
+    document.getElementById("bidOutput").innerHTML = "";
 }
 
 function addBid(inputID) {
