@@ -30,10 +30,16 @@ function addBid(inputID) {
     document.getElementById(inputID).value = "";
 }
 
-function saveBids() {
+function storeBids() {
     // Create a function that will save the array of bids to localStorage
+    localStorage.setItem("key", "value");
+    let test = localStorage.getItem("key");
+    console.log(test);
+    localStorage.setItem("storedBids", JSON.stringify(bidArray));
 }
 
 function retrieveBids() {
     // Create a function that will retrieve the array of bids from localStorage
+    bidArray = JSON.parse(localStorage.getItem("storedBids"));
+    showBids();
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bidding App with Local Storage</title>
-    <script src="prob2.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -22,10 +21,16 @@
     <br><br>
     <button id="displayBids" onclick="showBids()">Display Bids</button>
     <button id="clearBids" onclick="deleteBids()">Clear Bids</button>
-    <button id="storeBids">Store Bids</button>
-    <button id="retrieveBids">Retrieve Bids</button>
+    <button id="storeBids" onclick="storeBids()">Store Bids</button>
+    <button id="retrieveBids" onclick="retrieveBids()">Retrieve Bids</button>
     <br>
     <h3>Bids:</h3>
     <div id="bidOutput"></div>
+
+
+
+
+    
+    <script src="prob2.js"></script>
 </body>
 </html>
